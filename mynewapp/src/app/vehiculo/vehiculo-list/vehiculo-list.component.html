@@ -1,0 +1,61 @@
+<div class="page-Header">
+  <div class="row">
+    <div class="col-12">
+    <img src="./assets/TuSegundazo.com.png" class="img-fluid" alt="Responsive image">
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <hr style="color: grey;" />
+  <div class="row">
+    <div class="col-12">
+    <img src="./assets/Frame 1.png" class="img-fluid" alt="Responsive image">
+    </div>
+  </div>
+  <hr style="color: grey;" />
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-6">
+
+      <div class="Tabla">
+
+        <table class="table" >
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Marca</th>
+              <th scope="col">Linea</th>
+              <th scope="col">Modelo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let vehiculo of vehiculos">
+              <th scope="row">{{vehiculo.id}}</th>
+              <td>{{vehiculo.marca}}</td>
+              <td>{{vehiculo.linea}}</td>
+              <td>{{vehiculo.modelo}}</td>
+            </tr>
+
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<table>
+  <tbody>
+    <tr *ngFor="let item of vehiculosPorMarca">
+      <td>Total {{ item.marca }}:</td>
+      <td>{{ item.cantidad }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<footer class="footer">
+  <div class="container">
+    <p>Contact us: +57 3102105253 - info@tusegundazo.com - @tusegundazo</p>
+  </div>
+</footer>
